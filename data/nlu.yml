@@ -1,5 +1,4 @@
 version: "2.0"
-
 nlu:
 - intent: greet
   examples: |
@@ -16,7 +15,6 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
-
 - intent: goodbye
   examples: |
     - good afternoon
@@ -30,7 +28,6 @@ nlu:
     - see you around
     - bye bye
     - see you later
-
 - intent: affirm
   examples: |
     - yes
@@ -39,7 +36,6 @@ nlu:
     - of course
     - that sounds good
     - correct
-
 - intent: deny
   examples: |
     - no
@@ -49,7 +45,6 @@ nlu:
     - don't like that
     - no way
     - not really
-
 - intent: mood_great
   examples: |
     - perfect
@@ -66,7 +61,6 @@ nlu:
     - so so perfect
     - so good
     - so perfect
-
 - intent: mood_unhappy
   examples: |
     - my day was horrible
@@ -83,10 +77,34 @@ nlu:
     - extremly sad
     - so saad
     - so sad
-
 - intent: bot_challenge
   examples: |
     - are you a bot?
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+- intent: ask_lower_stress
+  examples: |
+    - what do I do if I am too stressed ?
+    - how can i lower my stress levels ?
+    - good ways to lower stress ?
+    - how to relax?
+    - good ways to relax?
+    - feeling stressed
+- intent: ask_eat_healthy
+  examples: |
+    - whats considered a healthy diet
+    - how to eat healthy
+    - how do I follow a healthy diet
+    - how do i eat healthy
+    - whats an example of healthy diet
+    - what should i eat?
+- intent: ask_exercise
+  examples: |
+    - whats the good amount of exercise for someone in their 30s
+    - how much exercise should I be getting?
+    - recommended exercise?
+    - is walking once a day enough ?
+    - how much running shuld I do in a week?
+    - how many times should i go to the gym
+    - need exercise

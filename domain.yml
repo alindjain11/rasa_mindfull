@@ -1,34 +1,39 @@
-version: "2.0"
-
-intents:
-  - greet
-  - goodbye
-  - affirm
-  - deny
-  - mood_great
-  - mood_unhappy
-  - bot_challenge
-
-responses:
-  utter_greet:
-  - text: "Hey! How are you?"
-
-  utter_cheer_up:
-  - text: "Here is something to cheer you up:"
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-
-  utter_did_that_help:
-  - text: "Did that help you?"
-
-  utter_happy:
-  - text: "Great, carry on!"
-
-  utter_goodbye:
-  - text: "Bye"
-
-  utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
-
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+intents:
+- ask_lower_stress
+- ask_exercise
+- ask_eat_healthy
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- mood_unhappy
+- bot_challenge
+responses:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_stress_info:
+  - text: It's Okay to feel stressed sometimes. Try to set realistic expectaions, dividing large tasks into more manageable portions. Relaxation and deep breathing exercises are extremely helpful
+  utter_exercise_info:
+  - text: Most adults should aim to get about 150 minutes of moderate exercise per week. Brisk walk or yard work.
+  utter_diet_info:
+  - text: A healthy diet includes dairy, whole grains,lean protein,  fruits and vegetables.
+actions:
+- utter_diet_info
+- utter_exercise_info
+- utter_stress_info
+version: '2.0'
